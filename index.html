@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change List Style</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container mt-4">
+        <h1 class="text-center">Customize List Style</h1>
+
+        <!-- Preferences Panel -->
+        <div class="row mt-4">
+            <div class="col-md-4">
+                <h3>Preferences</h3>
+                <div class="form-group">
+                    <label for="list-style">Select List Style</label>
+                    <select id="list-style" class="form-control">
+                        <option value="bullets">Bullets</option>
+                        <option value="numbers">Numbers</option>
+                        <option value="none">None</option>
+                    </select>
+                </div>
+
+                <button id="save-button" class="btn btn-primary btn-block">Save Preferences</button>
+            </div>
+
+            <!-- Dynamic List -->
+            <div class="col-md-8">
+                <h3>Dynamic List</h3>
+                <ul id="dynamic-list" class="list-group">
+                    <!-- List items will be added dynamically by JS -->
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

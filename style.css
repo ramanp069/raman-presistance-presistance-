@@ -1,0 +1,33 @@
+/* Base styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #c17474;
+    color: #333;
+    padding: 20px;
+}
+
+/* List styles */
+ul.bullets {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+ul.numbers {
+    list-style-type: decimal;
+    padding-left: 20px;
+}
+
+ul.none {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+    .row {
+        flex-direction: column;
+    }
+}
